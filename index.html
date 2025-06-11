@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robot Cleaner</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Robot Cleaner</h1>
+    </header>
+
+    <main>
+      <section id="controls">
+        <h2>Contrôles</h2>
+        <button id="start-btn"><i class="fa fa-play"></i> Démarrer</button>
+        <button id="pause-btn"><i class="fa fa-pause"></i> Pause</button>
+        <button id="reset-btn">
+          <i class="fa fa-rotate-left"></i> Réinitialiser
+        </button>
+      </section>
+
+      <section id="house-layout">
+        <h2>Plan de la Maison</h2>
+        <div class="layout-flex">
+          <div id="battery-status" class="vertical-battery"></div>
+          <div id="grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Robot Cleaner</p>
+    </footer>
+  </body>
+</html>

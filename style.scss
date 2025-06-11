@@ -1,0 +1,159 @@
+// Fichier SCSS principal
+body {
+  background: #f0f0f0;
+  color: #333;
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  background: #2d3e50;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  padding: 2rem;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+#robot-status {
+  display: none; // Hide the old status section
+}
+
+.layout-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center; // Center vertically battery and grid
+  justify-content: center;
+  gap: 2em;
+}
+
+.vertical-battery {
+  display: flex;
+  flex-direction: row;
+  align-items: center; // <-- Center battery percent and bar vertically
+  justify-content: center;
+  min-width: 2em;
+  font-size: 1.6em;
+  font-family: monospace;
+  background: #f8fafb;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+  padding: 1em 0.5em;
+  height: 32em;
+  gap: 0.5em;
+}
+
+.battery-bar {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center; // <-- Center battery blocks vertically
+  height: 100%;
+}
+
+.battery-bar div {
+  line-height: 1.1em;
+}
+
+.battery-percent {
+  font-size: 1em;
+  color: #2d3e50;
+  margin-right: 0.5em;
+  writing-mode: initial;
+  text-orientation: initial;
+  display: flex;
+  align-items: center; // <-- Center percent text vertically with battery bar
+  height: 100%;
+}
+
+#controls,
+#house-layout {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #f8fafb;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+}
+
+#robot-status span,
+#robot-position span {
+  font-weight: bold;
+  color: #2d3e50;
+}
+
+#controls button {
+  background: #2d3e50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7em 1.5em;
+  margin-right: 1em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+}
+#controls button:hover {
+  background: #1a2533;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(10, 3em);
+  grid-template-rows: repeat(10, 3em);
+  gap: 0.3em;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+#grid .cell {
+  width: 2.5em;
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  background: #e6eaf0;
+  border-radius: 5px;
+  border: 1px solid #d0d4db;
+  transition: background 0.2s;
+}
+
+#grid .robot {
+  background: #ffe066;
+  border: 2px solid #f9c846;
+}
+
+#grid .dirty {
+  background: #f8d7da;
+}
+
+#grid .clean {
+  background: #d4edda;
+}
+
+#grid .clean_by_robot {
+  background: #b6e0fe;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.95em;
+}

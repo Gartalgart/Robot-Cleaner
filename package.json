@@ -1,0 +1,15 @@
+{
+  "name": "mon-projet",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "sass": "sass style.scss style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}
