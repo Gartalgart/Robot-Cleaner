@@ -1,15 +1,18 @@
 {
   "name": "mon-projet",
   "version": "1.0.0",
-  "main": "script.js",
+  "main": "js/main.js",
   "scripts": {
-    "sass": "sass style.scss style.css --watch"
+    "sass": "sass style.scss style.css --watch",
+    "start": "node js/main.js",
+    "test": "node --test"
   },
   "keywords": [],
-  "author": "",
+  "author": "Robots Cleaner Maintainers",
   "license": "ISC",
-  "description": "",
+  "description": "A simple demo of cleanign robot algorithm",
   "devDependencies": {
     "sass": "^1.89.2"
-  }
+  },
+  "type": "module"
 }
