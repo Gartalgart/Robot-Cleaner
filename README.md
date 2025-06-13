@@ -1,6 +1,3 @@
--# Robot-Cleaner
--The robot will clean the house piece by piece thanks to an algorithm I made myself.
-
 # Robot Cleaner
 
 Ce projet propose une petite simulation de robot aspirateur capable de nettoyer une maison case par case.
