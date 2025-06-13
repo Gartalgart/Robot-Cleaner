@@ -1,0 +1,299 @@
+@media (max-width: 600px) {
+  html,
+  body {
+    width: 100vw !important;
+    min-width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+  }
+  main {
+    max-width: 100vw !important;
+    width: 100vw !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    background: #fff !important;
+  }
+  header,
+  footer {
+    padding: 0.7rem 0;
+    font-size: 1.1rem;
+  }
+  h1 {
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+    margin: 1rem 0.5rem !important;
+  }
+  #house-layout {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 0 !important;
+  }
+  .layout-flex {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 0 !important;
+  }
+  .vertical-battery {
+    margin: 0 !important;
+    padding: 0.8em 0.5em !important;
+    height: auto !important;
+    min-height: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    background: #f8fafb !important;
+    gap: 0.2em !important;
+    font-size: 0.95em !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+  }
+  .battery-bar {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    height: auto !important;
+    gap: 0.1em !important;
+  }
+  .battery-bar div {
+    font-size: 1em !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .battery-percent {
+    font-size: 1em !important;
+    margin-right: 0.3em !important;
+    height: auto !important;
+  }
+  #grid {
+    display: grid !important;
+    grid-template-columns: repeat(10, 2.3em) !important;
+    grid-template-rows: repeat(10, 2.3em) !important;
+    gap: 0.05em !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: calc(100vh - 30em) !important;
+    min-height: 0 !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    overflow: hidden !important;
+    background: #fff !important;
+    box-sizing: border-box !important;
+  }
+  #grid .cell {
+    width: 100% !important;
+    height: 100% !important;
+    aspect-ratio: 1/1 !important;
+    font-size: 1em !important;
+    border-radius: 2px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  #controls {
+    flex-direction: column !important;
+    gap: 0.5em !important;
+    align-items: stretch !important;
+    justify-content: center !important;
+    display: flex !important;
+    padding: 0.3em 0 !important;
+    margin-bottom: 0.5rem !important;
+    width: 100vw !important;
+  }
+  #controls button {
+    width: 80% !important;
+    font-size: 1em !important;
+    padding: 0.7em 0.5em !important;
+    margin: 0 0 1em 2em !important;
+    border-radius: 8px !important;
+  }
+  #chrono,
+  #message {
+    font-size: 1em !important;
+    margin: 0.5em 0 0.3em 0 !important;
+  }
+  footer {
+    margin-top: 1.2rem !important;
+    font-size: 0.95em !important;
+    padding: 1rem 0 0.5rem 0 !important;
+    width: 100vw !important;
+  }
+}
+body {
+  background: #f0f0f0;
+  color: #333;
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  background: #2d3e50;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  padding: 2rem;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+#robot-status {
+  display: none;
+}
+
+.layout-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.vertical-battery {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-width: 2em;
+  font-size: 1.6em;
+  font-family: monospace;
+  background: #f8fafb;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+  padding: 1em 0.5em;
+  height: 32em;
+  gap: 0.5em;
+}
+
+.battery-bar {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.battery-bar div {
+  line-height: 1.1em;
+}
+
+.battery-percent {
+  font-size: 1em;
+  color: #2d3e50;
+  margin-right: 0.5em;
+  writing-mode: initial;
+  text-orientation: initial;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+#controls,
+#house-layout {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #f8fafb;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+}
+
+#robot-status span,
+#robot-position span {
+  font-weight: bold;
+  color: #2d3e50;
+}
+
+#controls button {
+  background: #2d3e50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7em 1.5em;
+  margin-right: 1em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+#controls button:hover {
+  background: #1a2533;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(10, 3em);
+  grid-template-rows: repeat(10, 3em);
+  gap: 0.3em;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+#grid .cell {
+  width: 2.5em;
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  background: #e6eaf0;
+  border-radius: 5px;
+  border: 1px solid #d0d4db;
+  transition: background 0.2s;
+}
+
+#grid .robot {
+  background: #ffe066;
+  border: 2px solid #f9c846;
+}
+
+#grid .dirty {
+  background: #f8d7da;
+}
+
+#grid .clean {
+  background: #d4edda;
+}
+
+#grid .clean_by_robot {
+  background: #b6e0fe;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.95em;
+}
+
+/*# sourceMappingURL=style.css.map */
